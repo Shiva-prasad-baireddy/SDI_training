@@ -10,8 +10,7 @@ let users = [
 ];
 
 
-// ================= CREATE =================
-// POST /users
+
 app.post("/users", (req, res) => {
   const newUser = {
     id: users.length + 1,
@@ -24,7 +23,7 @@ app.post("/users", (req, res) => {
 });
 
 
-// ================= READ =================
+
 // GET /users
 app.get("/users", (req, res) => {
   res.send(users);
